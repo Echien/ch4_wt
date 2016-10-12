@@ -1,3 +1,4 @@
+
 -#  This file is app/views/movies/index.html.haml
 %h1 All Movies
 
@@ -14,4 +15,8 @@
         %td= movie.title 
         %td= movie.rating
         %td= movie.release_date
-%td= link_to "More about #{movie.title}", movie_path(movie)
+        %td= link_to "More about #{movie.title}", movie_path(movie)
+
+-# add to end of index.html.haml
+
+= link_to 'Add new movie', new_movie_path
